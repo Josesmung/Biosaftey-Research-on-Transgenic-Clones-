@@ -56,8 +56,8 @@ par(mfrow=c(4,4))
 TOSTtwo.raw(
   m1 = as.double(week2_avgs[1]),
   m2 = as.double(week2_avgs[2]),
-  sd1 = as.double(week2_sd[1]), 
-  sd2 = as.double(week2_sd[2]),
+  sd1 = as.double(week2_sds[1]), 
+  sd2 = as.double(week2_sds[2]),
   n1 = 8, n2 = 8,
   low_eqbound = 0,
   high_eqbound = 0,
@@ -68,7 +68,23 @@ TOSTtwo.raw(
 
 # TOST Function
 TOSTfunc <- function(week_number) {
-
+  if (week_number < 9 & week_number > 0)
+  data_num <- week_number + 2
+  week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
+  week_sds <- c(data[data_num, "X.11"], data[data_num, "X.21"])
+  TOSTtwo.raw(
+    m1 = as.double(week_avgs[1]),
+    m2 = as.double(week_avgs[2]),
+    sd1 = as.double(week_sds[1]), 
+    sd2 = as.double(week_sds[2]),
+    n1 = 8, n2 = 8,
+    low_eqbound = 0,
+    high_eqbound = 0,
+    alpha = 0.05,
+    var.equal = TRUE,
+    plot = TRUE
+  )
+  
 }
 
 
