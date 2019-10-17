@@ -66,7 +66,7 @@ TOSTtwo.raw(
   plot = TRUE
   )
 
-# TOST Function
+# TOST Function for any week
 TOSTfunc <- function(week_number) {
   if (week_number < 9 & week_number > 0)
   data_num <- week_number + 2
