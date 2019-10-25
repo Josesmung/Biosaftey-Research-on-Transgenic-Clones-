@@ -50,21 +50,21 @@ weeks_data <- c(
 )
 # TOST Test
 
-#used to include all graphs
-par(mfrow=c(4,4)) 
+# used to include all graphs
+par(mfrow=c(2, 3)) 
 
-TOSTtwo.raw(
-  m1 = as.double(week2_avgs[1]),
-  m2 = as.double(week2_avgs[2]),
-  sd1 = as.double(week2_sds[1]), 
-  sd2 = as.double(week2_sds[2]),
-  n1 = 8, n2 = 8,
-  low_eqbound = 0,
-  high_eqbound = 0,
-  alpha = 0.05,
-  var.equal = TRUE,
-  plot = TRUE
-  )
+#TOSTtwo.raw(
+#  m1 = as.double(week2_avgs[1]),
+#  m2 = as.double(week2_avgs[2]),
+#  sd1 = as.double(week2_sds[1]), 
+#  sd2 = as.double(week2_sds[2]),
+#  n1 = 3, n2 = 3,
+#  low_eqbound = 0,
+#  high_eqbound = 0,
+#  alpha = 0.05,
+#  var.equal = TRUE,
+#  plot = TRUE
+#  )
 
 # TOST Function for any week
 TOSTfunc <- function(week_number) {
@@ -72,19 +72,23 @@ TOSTfunc <- function(week_number) {
   data_num <- week_number + 2
   week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
   week_sds <- c(data[data_num, "X.11"], data[data_num, "X.21"])
-  TOSTtwo.raw(
+  TOSTtwo(
     m1 = as.double(week_avgs[1]),
     m2 = as.double(week_avgs[2]),
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
     n1 = 8, n2 = 8,
-    low_eqbound = 0,
-    high_eqbound = 0,
+    low_eqbound_d = -0.01,
+    high_eqbound_d = 0.01,
     alpha = 0.05,
     var.equal = TRUE,
     plot = TRUE
   )
   
 }
+
+
+
+# If the weekly TOST's show equivelence, no need for the accomodation of the repeeate measures
 
 
