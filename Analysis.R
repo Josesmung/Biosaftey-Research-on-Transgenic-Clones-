@@ -53,20 +53,10 @@ weeks_data <- c(
 # used to include all graphs
 par(mfrow=c(2, 3)) 
 
-#TOSTtwo.raw(
-#  m1 = as.double(week2_avgs[1]),
-#  m2 = as.double(week2_avgs[2]),
-#  sd1 = as.double(week2_sds[1]), 
-#  sd2 = as.double(week2_sds[2]),
-#  n1 = 3, n2 = 3,
-#  low_eqbound = 0,
-#  high_eqbound = 0,
-#  alpha = 0.05,
-#  var.equal = TRUE,
-#  plot = TRUE
-#  )
 
 # TOST Function for any week
+effect_size <- log(x = 1.25)
+
 TOSTfunc <- function(week_number) {
   if (week_number < 9 & week_number > 0)
   data_num <- week_number + 2
@@ -78,8 +68,8 @@ TOSTfunc <- function(week_number) {
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
     n1 = 8, n2 = 8,
-    low_eqbound_d = -0.01,
-    high_eqbound_d = 0.01,
+    low_eqbound_d = -effect_size,
+    high_eqbound_d = effect_size,
     alpha = 0.05,
     var.equal = TRUE,
     plot = TRUE
