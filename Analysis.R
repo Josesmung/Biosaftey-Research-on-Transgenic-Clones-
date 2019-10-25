@@ -1,7 +1,4 @@
-library(dplyr)
 library(TOSTER)
-library(ggplot2)
-library(stringr)
 # Reading in Data, observations converted from Excel to CSV file
 data <- read.csv("data/plant-obs.csv", stringsAsFactors = F)
 
