@@ -9,4 +9,4 @@ Package Info: https://cran.r-project.org/web/packages/TOSTER/TOSTER.pdf
 
 **Results**
 
-![Equivelance Plots](Data/Rplot02)
+![Equivalence Plots](Data/Rplot02.png)
