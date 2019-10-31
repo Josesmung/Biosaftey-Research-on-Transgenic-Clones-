@@ -8,3 +8,5 @@ Package Info: https://cran.r-project.org/web/packages/TOSTER/TOSTER.pdf
 `install.packages("TOSTER")`
 
 **Results**
+
+![Equivelance Plots](Data/Rplot02)
