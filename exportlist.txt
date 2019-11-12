@@ -140,6 +140,66 @@ NTL@sntl.co.uk
 
 
 %0 Journal Article
+%A Rose, E. M.
+%A Mathew, T.
+%A Coss, D. A.
+%A Lohr, B.
+%A Omland, K. E.
+%D 2018
+%T A new statistical method to test equivalence: an application in male and female eastern bluebird song
+%B Animal Behaviour
+%V 145
+%P 77-85
+%8 Nov
+%9 Article
+%! A new statistical method to test equivalence: an application in male and female eastern bluebird song
+%O Anim. Behav.
+%@ 0003-3472
+%R 10.1016/j.anbehav.2018.09.004
+%M WOS:000449696600008
+%K eastern bluebird
+equivalence testing
+female song
+hypothesis testing
+
+publication bias
+sexual selection
+european starlings
+evolution
+vocalizations
+
+recognition
+blackbirds
+songbirds
+ecology
+quality
+differ
+Behavioral Sciences
+Zoology
+%X Understanding complex natural systems requires approaches with minimal statistical limitations and biases. Previously, however, the fields of behaviour, ecology and evolution generally have been restricted to evaluating differences between statistical distributions. This framework can be very powerful. Unfortunately, it has also created a bias in these, and many other, fields towards publications focusing only on phenomena for which there are statistically significant differences. However, there is a wide range of questions that would benefit from reversing the existing paradigm and testing, instead, for equivalence. We have adapted the two one-sided test (TOST), also known as equivalence testing, from pharmaceutical science to be applicable to behavioural and ecological studies. We created a repeated measures analysis that allows researchers to statistically examine similarities between distributions. We compared song structure in male and female eastern bluebirds, Sialia sialis, as a case study for this method. We failed to find significant differences between male and female songs via a more traditional test, repeated measures ANOVA. Therefore, no definitive conclusion could be drawn about the similarities or differences in song structure. However, our repeated measures equivalence test showed that, based on five standard measures of song variation, male and female eastern bluebirds sing statistically equivalent songs. Our study highlights the presence of complex female song in a temperate songbird species. Additionally, we provide a new statistical test useful for expanding the statistical toolbox to assess new behavioural and ecological questions, and to help counteract publication bias in our fields. (C) 2018 The Association for the Study of Animal Behaviour. Published by Elsevier Ltd. All rights reserved.
+%Z ISI Document Delivery No.: GZ7WJ
+Times Cited: 2
+Cited Reference Count: 90
+Rose, Evangeline M. Mathew, Thomas Coss, Derek A. Lohr, Bernard Omland, Kevin E.
+Maryland Ornithological Society
+We are grateful to John Frank, Lisa Colangelo and the Howard County Park District for allowing us to conduct research at West Friendship Park, and for allowing us to install bluebird boxes along the trails. We thank Dr Tamra Mendelson from the University of Maryland, Baltimore County, Dr Tim Parker from Whitman College, Dr Lauryn Benedict from the University of Northern Colorado and Kristian Omland for their helpful comments. We thank Dr Sarah Luttrell for both her statistical advice and her aid in utilizing the Signal sound analysis software effectively. We also thank all of the field and lab technicians (Michael Rowley, Casey Haines and Christina Tsai) that contributed hours of work to helping collect, measure and analyse this data. This work was supported by the Maryland Ornithological Society.
+2
+7
+Academic press ltd- elsevier science ltd
+London
+1095-8282
+%U <Go to ISI>://WOS:000449696600008
+%+ [Rose, Evangeline M.
+Coss, Derek A.
+Lohr, Bernard
+Omland, Kevin E.] Univ Maryland Baltimore Cty, Dept Biol Sci, Baltimore, MD 21228 USA. [Mathew, Thomas] Univ Maryland Baltimore Cty, Dept Math & Stat, Baltimore, MD 21228 USA.
+Rose, EM (reprint author), Univ Maryland Baltimore Cty, 1000 Hilltop Circle, Baltimore, MD 21250 USA.
+eshank1@umbc.edu
+%G English
+
+
+
+%0 Journal Article
 %A Schall, R.
 %A Williams, R. L.
 %D 1996
