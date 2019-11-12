@@ -1,0 +1,229 @@
+%0 Journal Article
+%A Chow, S. C.
+%D 1999
+%T Individual bioequivalence - A review of the FDA draft guidance
+%B Drug Information Journal
+%V 33
+%N 2
+%P 435-444
+%8 Apr-Jun
+%9 Article
+%! Individual bioequivalence - A review of the FDA draft guidance
+%O Drug Inf. J.
+%@ 0092-8615
+%R 10.1177/009286159903300215
+%M WOS:000080756000015
+%K individual bioequivalence
+generic drugs
+brand-name drugs
+Food and
+Drug Administration
+bioavailability bioequivalence
+Health Care Sciences & Services
+Pharmacology & Pharmacy
+%X As more generic drugs become available in the marketplace, it is a public concern whether the quality, safety, and efficacy of generic drugs are the same as the brand name drug. Under current regulation, the United Stales Food and Drug Administration (FDA) only requires that evidence of bioequivalence in average bioavailability be provided for assessment of bioequivalence. FDA, however does not require that bioequivalence among generic copies of the same brand name drug be demonstrated As a result, it is a concern whether these generic drugs can be used interchangeably. To address this question, the concepts of population bioequivalence for drug prescribability and individual bioequivalence for drug switchability have been proposed. In this paper, we provide a comprehensive review of the draft FDA guidance on "In Vivo Bioequivalence Studies Based on Population and Individual Bioequivalence Approaches" which was distributed for comment in October 1997. The discussion will be primarily on the FDA proposed criteria, design, statistical methods, and interpretations on the assessment of individual bioequivalence from the pharmaceutical industry perspective.
+%Z ISI Document Delivery No.: 204GP
+Times Cited: 23
+Cited Reference Count: 18
+Chow, SC
+25
+1
+2
+Drug information association
+Fort washington
+%U <Go to ISI>://WOS:000080756000015
+%+ StatPlus Inc, Yardley, PA 19067 USA.
+Chow, SC (reprint author), StatPlus Inc, Heston Hall,Suite 206,1790 Yardley Langhorne Rd, Yardley, PA 19067 USA.
+%G English
+
+
+
+%0 Journal Article
+%A Jaki, T.
+%D 2010
+%T Bioequivalence and Statistics in Clinical Pharmacology
+%B Journal of the Royal Statistical Society Series a-Statistics in Society
+%V 173
+%P 467-468
+%8 Apr
+%9 Book Review
+%! Bioequivalence and Statistics in Clinical Pharmacology
+%O J. R. Stat. Soc. Ser. A-Stat. Soc.
+%@ 0964-1998
+%R 10.1111/j.1467-985X.2009.00634_11.x
+%M WOS:000275108800027
+%K Mathematical Methods In Social Sciences
+Mathematics
+%Z ISI Document Delivery No.: 563DU
+Times Cited: 0
+Cited Reference Count: 1
+Jaki, Thomas
+0
+1
+Wiley-blackwell publishing, inc
+Malden
+2
+%+ [Jaki, Thomas] Univ Lancaster, Lancaster LA1 4YW, England.
+Jaki, T (reprint author), Univ Lancaster, Lancaster LA1 4YW, England.
+jaki.thomas@gmail.com
+%G English
+
+
+
+%0 Journal Article
+%A Limentani, G. B.
+%A Ringo, M. C.
+%A Ye, F.
+%A Bergquist, M. L.
+%A McSorley, E. P.
+%D 2005
+%T Beyond the t-test: Statistical equivalence testing
+%B Analytical Chemistry
+%V 77
+%N 11
+%P 221A-226A
+%8 Jun
+%9 Article
+%! Beyond the t-test: Statistical equivalence testing
+%O Anal. Chem.
+%@ 0003-2700
+%R 10.1021/ac053390m
+%M WOS:000229561800007
+%K Chemistry
+%Z ISI Document Delivery No.: 932OA
+Times Cited: 67
+Cited Reference Count: 23
+Limentani, GB Ringo, MC Ye, F Bergquist, ML McSorley, EP
+67
+0
+10
+Amer chemical soc
+Washington
+%U <Go to ISI>://WOS:000229561800007
+%+ GlaxoSmithKline, Res Triangle Pk, NC USA.
+Limentani, GB (reprint author), 5 Moore Dr, Res Triangle Pk, NC USA.
+Giselle.B.Limentani@gsk.com
+%G English
+
+
+
+%0 Journal Article
+%A Longford, N. T.
+%D 2008
+%T Bioequivalence studies in drug development: Methods and applications
+%B Journal of the Royal Statistical Society Series a-Statistics in Society
+%V 171
+%P 1037-1037
+%9 Book Review
+%! Bioequivalence studies in drug development: Methods and applications
+%O J. R. Stat. Soc. Ser. A-Stat. Soc.
+%@ 0964-1998
+%R 10.1111/j.1467-985X.2008.00561_8.x
+%M WOS:000259363400019
+%K trials
+Mathematical Methods In Social Sciences
+Mathematics
+%Z ISI Document Delivery No.: 350OU
+Times Cited: 0
+Cited Reference Count: 4
+Longford, N. T.
+0
+Wiley
+Hoboken
+1467-985x
+4
+%+ [Longford, N. T.] SNTL, Barcelona, Spain. [Longford, N. T.] Univ Pompeu Fabra, Barcelona, Spain.
+Longford, NT (reprint author), SNTL, Barcelona, Spain.
+NTL@sntl.co.uk
+%G English
+
+
+
+%0 Journal Article
+%A Schall, R.
+%A Williams, R. L.
+%D 1996
+%T Towards a practical strategy for assessing individual bioequivalence
+%B Journal of Pharmacokinetics and Biopharmaceutics
+%V 24
+%N 1
+%P 133-149
+%8 Feb
+%9 Article
+%! Towards a practical strategy for assessing individual bioequivalence
+%O J. Pharmacokinet. Biopharm.
+%@ 0090-466X
+%R 10.1007/bf02353513
+%M WOS:A1996UW53200006
+%K bootstrap
+individual bioequivalence
+moment-based criteria
+population
+bioequivalence
+probability-based criteria
+scaled criteria
+unsealed
+criteria
+Pharmacology & Pharmacy
+%X Bioequivalence of two drug formulations is currently defined by drug regulatory authorities in terms of the mean responses following administration of the test and reference formulations (average bioequivalence). However, the various potential shortcomings of average bioequivalence are now understood, and switchability, and thus individual bioequivalence, has become a reasonable expectation when changing from one pharmaceutically equivalent drug product to another. Progress has been made in developing criteria for individual bioequivalence, and an overview and classification of most of the different approaches to the assessment of individual bioequivalence have been achieved. As a consequence of this classification, the different character of scaled and unscaled bioequivalence measures has been recognized and, in turn, this leads to the proposal, made in this paper, or using both scaled and unscaled criteria for bioequivalence assessment of different classes of drugs, depending on their within-subject variability and therapeutic range. This strategy addresses the shortcomings of average bioequivalence, and, when applied to data sets from bioequivalence studies with four-period replicate crossover designs, turns out to have some satisfactory properties. Open questions and areas for further research are discussed.
+%Z ISI Document Delivery No.: UW532
+Times Cited: 62
+Cited Reference Count: 16
+Schall, R Williams, RL
+Schall, Robert/A-9174-2012
+64
+0
+1
+Springer/plenum publishers
+New york
+%+ US FDA, CDER, ROCKVILLE, MD 20587 USA.
+Schall, R (reprint author), UNIV ORANGE FREE STATE, DEPT PHARMACOL, DIV BIOMETRY, POB 339 G6, BLOEMFONTEIN 9300, SOUTH AFRICA.
+%G English
+
+
+
+%0 Journal Article
+%A Walker, E.
+%A Nowacki, A. S.
+%D 2011
+%T Understanding Equivalence and Noninferiority Testing
+%B Journal of General Internal Medicine
+%V 26
+%N 2
+%P 192-196
+%8 Feb
+%9 Article
+%! Understanding Equivalence and Noninferiority Testing
+%O J. Gen. Intern. Med.
+%@ 0884-8734
+%R 10.1007/s11606-010-1513-8
+%M WOS:000287668800019
+%K equivalence margin
+TOST
+hypotheses testing
+placebo-controlled trials
+active-control trials
+randomized-trials
+
+practical issues
+Health Care Sciences & Services
+General & Internal Medicine
+%X Increasingly, the goal of many studies is to determine if new therapies have equivalent or noninferior efficacies to the ones currently in use. These studies are called equivalence/noninferiority studies, and the statistical methods for their analysis require only simple modifications to the traditional hypotheses testing framework. Nevertheless, important and subtle issues arise with the application of such methods. This article describes the concepts and statistical methods involved in testing equivalence/noninferiority. The aim is to enable the clinician to understand and critically assess the growing number of articles utilizing such methods.
+%Z ISI Document Delivery No.: 725TK
+Times Cited: 264
+Cited Reference Count: 15
+Walker, Esteban Nowacki, Amy S.
+264
+2
+21
+Springer
+New york
+%U <Go to ISI>://WOS:000287668800019
+%+ [Walker, Esteban
+Nowacki, Amy S.] Cleveland Clin, Dept Quantitat Hlth Sci, Cleveland, OH 44195 USA.
+Walker, E (reprint author), Cleveland Clin, Dept Quantitat Hlth Sci, 9500 Euclid Ave,JJN3 01, Cleveland, OH 44195 USA.
+walkere1@ccf.org
+%G English
+
+
+
