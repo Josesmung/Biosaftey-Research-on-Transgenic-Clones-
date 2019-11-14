@@ -64,7 +64,7 @@ TOSTfunc <- function(week_number) {
     m2 = as.double(week_avgs[2]),
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
-    n1 = 3, n2 = 3,
+    n1 = 10, n2 = 10,
     low_eqbound_d = -effect_size,
     high_eqbound_d = effect_size,
     alpha = 0.05,
