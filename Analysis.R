@@ -48,12 +48,15 @@ weeks_data <- c(
 # TOST Test
 
 # used to include all graphs
-par(mfrow=c(2, 3)) 
+#par(mfrow=c(2, 3)) 
 
 
 # TOST Function for any week
-effect_size <- log(x = 1.25)
 
+# the effect size 
+theta <- log(x = 1.25)
+
+# IGNORE
 TOSTfunc <- function(week_number) {
   if (week_number < 9 & week_number > 0)
   data_num <- week_number + 2
@@ -65,16 +68,71 @@ TOSTfunc <- function(week_number) {
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
     n1 = 10, n2 = 10,
-    low_eqbound_d = -effect_size,
-    high_eqbound_d = effect_size,
+    low_eqbound_d = -theta,
+    high_eqbound_d = theta,
     alpha = 0.05,
     var.equal = TRUE,
     plot = TRUE
   )
-  
+}
+
+# TOST function after Consulting Session
+TOSTtestfunc <- function(week_number, theta) {
+  if (week_number < 9 & week_number > 0)
+    data_num <- week_number + 2
+  week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
+  WTLeafs <- as.integer(data[data_num, "WT.boxes"]) + 
+    as.integer(data[data_num, "X.2"]) +
+    as.integer(data[data_num, "X.3"])
+  ClonesLeafs <- as.integer(data[data_num, "Clone.3.boxes"]) +
+    as.integer(data[data_num, "X.12"]) +
+    as.integer(data[data_num, "X.13"])
+  TOSTtwo.prop(
+    prop1 = as.double(week_avgs[1]), 
+    prop2 = as.double(week_avgs[2]), 
+    n1 = WTLeafs,
+    n2 = ClonesLeafs, 
+    low_eqbound = -theta, 
+    high_eqbound = theta, 
+    alpha = .05,
+    plot = TRUE, 
+    verbose = TRUE)
 }
 
 
+#TOST test function raw inputs
+TOSTrawcalulations <- function(week_number, theta) {
+  if (week_number < 9 & week_number > 0)
+    data_num <- week_number + 2
+  week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
+  WTLeafs <- as.integer(data[data_num, "WT.boxes"]) + 
+    as.integer(data[data_num, "X.2"]) +
+    as.integer(data[data_num, "X.3"])
+  ClonesLeafs <- as.integer(data[data_num, "Clone.3.boxes"]) +
+    as.integer(data[data_num, "X.12"]) +
+    as.integer(data[data_num, "X.13"])
+  
+  #calculatiing initial values
+  WTprop <- as.double(week_avgs[1])
+  CLONEprop = as.double(week_avgs[2])
+  prop_dif <- WTprop - CLONEprop
+  prop_se <- sqrt((WTprop*(1-WTprop))/WTLeafs + (CLONEprop*(1-CLONEprop))/ClonesLeafs)
+  
+  #calculating z-statistic
+  z1 <- (prop_dif - low_eqbound)/prop_se
+  z2 <- (prop_dif - high_eqbound)/prop_se
+  z  <- prop_dif / prop_se
+  ztest <- 1 - pnorm(abs(z))
+  
+  #calculating p-value for both one-sided tests
+  p1 <- 1 - pnorm(z1)
+  p2 <- pnorm(z2)
+  ptost <- max(p1,p2) #Get highest p-value for summary TOST result
+  ztost <- ifelse(abs(z1) < abs(z2), z1, z2) #Get lowest z-value for summary TOST result
+  TOSToutcome <- ifelse(ptost<alpha,"significant","non-significant")
+  testoutcome <- ifelse(ztest<(alpha/2), "significant","non-significant")
+
+}
 
 # If the weekly TOST's show equivelence, no need for the accomodation of the repeeate measures
 
