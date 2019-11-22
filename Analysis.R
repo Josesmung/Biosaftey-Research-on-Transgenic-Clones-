@@ -102,6 +102,7 @@ TOSTtestfunc <- function(week_number, theta) {
 
 #TOST test function raw inputs
 TOSTrawcalulations <- function(week_number, theta) {
+  alpha <- .05
   if (week_number < 9 & week_number > 0)
     data_num <- week_number + 2
   week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
@@ -118,9 +119,14 @@ TOSTrawcalulations <- function(week_number, theta) {
   prop_dif <- WTprop - CLONEprop
   prop_se <- sqrt((WTprop*(1-WTprop))/WTLeafs + (CLONEprop*(1-CLONEprop))/ClonesLeafs)
   
+  print(prop_se)
+  print(prop_se / sqrt(WTLeafs + ClonesLeafs))
+  
   #calculating z-statistic
-  z1 <- (prop_dif - low_eqbound)/prop_se
-  z2 <- (prop_dif - high_eqbound)/prop_se
+                    #lower bound
+  z1 <- (prop_dif - theta)/prop_se
+                    #upper bound
+  z2 <- (prop_dif - theta)/prop_se
   z  <- prop_dif / prop_se
   ztest <- 1 - pnorm(abs(z))
   
@@ -128,9 +134,17 @@ TOSTrawcalulations <- function(week_number, theta) {
   p1 <- 1 - pnorm(z1)
   p2 <- pnorm(z2)
   ptost <- max(p1,p2) #Get highest p-value for summary TOST result
-  ztost <- ifelse(abs(z1) < abs(z2), z1, z2) #Get lowest z-value for summary TOST result
-  TOSToutcome <- ifelse(ptost<alpha,"significant","non-significant")
-  testoutcome <- ifelse(ztest<(alpha/2), "significant","non-significant")
+  print(paste("p value = ",ptost))
+  # ztost <- ifelse(abs(z1) < abs(z2), z1, z2) #Get lowest z-value for summary TOST result
+  TOSToutcome <- if(ptost<alpha) {
+    TOSToutcome <- "significant or not equivelent (H0)"
+  } else {
+    TOSToutcome <- "non-significant or equivelent (Ha)"
+  }  
+  print(TOSToutcome)
+  #testoutcome <- ifelse(ztest<(alpha/2), "significant","non-significant")
+  
+  #Confidence Bounds (97.5)
 
 }
 
