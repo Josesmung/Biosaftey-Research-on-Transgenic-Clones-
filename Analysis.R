@@ -48,7 +48,7 @@ weeks_data <- c(
 # TOST Test
 
 # used to include all graphs
-#par(mfrow=c(2, 3)) 
+par(mfrow=c(2, 3)) 
 
 
 # TOST Function for any week
@@ -56,7 +56,7 @@ weeks_data <- c(
 # the effect size 
 theta <- log(x = 1.25)
 
-# IGNORE
+# for normal distribution 
 TOSTfunc <- function(week_number) {
   if (week_number < 9 & week_number > 0)
   data_num <- week_number + 2
@@ -67,7 +67,7 @@ TOSTfunc <- function(week_number) {
     m2 = as.double(week_avgs[2]),
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
-    n1 = 10, n2 = 10,
+    n1 = 3, n2 = 3,
     low_eqbound_d = -theta,
     high_eqbound_d = theta,
     alpha = 0.05,
@@ -76,8 +76,8 @@ TOSTfunc <- function(week_number) {
   )
 }
 
-# TOST function after Consulting Session
-TOSTtestfunc <- function(week_number, theta) {
+# TOST function after Consulting Session (Proportion)
+TOSTpropfunc <- function(week_number, theta) {
   if (week_number < 9 & week_number > 0)
     data_num <- week_number + 2
   week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
