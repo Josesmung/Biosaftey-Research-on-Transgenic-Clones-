@@ -62,14 +62,14 @@ TOSTfunc <- function(week_number) {
   data_num <- week_number + 2
   week_avgs <- c(data[data_num, "X.10"], data[data_num, "X.20"])
   week_sds <- c(data[data_num, "X.11"], data[data_num, "X.21"])
-  TOSTtwo(
+  TOSTtwo.raw(
     m1 = as.double(week_avgs[1]),
     m2 = as.double(week_avgs[2]),
     sd1 = as.double(week_sds[1]), 
     sd2 = as.double(week_sds[2]),
     n1 = 3, n2 = 3,
-    low_eqbound_d = -theta,
-    high_eqbound_d = theta,
+    low_eqbound = -theta,
+    high_eqbound = theta,
     alpha = 0.05,
     var.equal = TRUE,
     plot = TRUE
