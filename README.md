@@ -21,11 +21,11 @@ Wild type and transgenic clone T3, ten plants each, were cultured on ½ Hoagland
 ![Equivalence Plots](Data/BinomPlot.png)
 
 
-P Values Taken from Function,
+P Values Bounds taken from each function,
 ## Week 2
 **Normal:**   
-p-value lower bound: 0.033
-p-value upper bound: 0.191   
+p-value lower bound: 0.033    
+p-value upper bound: 0.191    
 **Binomial:**   
 p-value lower bound: 0.0000009    
 p-value upper bound: 0.030
@@ -33,8 +33,8 @@ p-value upper bound: 0.030
 
 ## Week 3
 **Normal:**   
-p-value lower bound: 0.097
-p-value upper bound: 0.150   
+p-value lower bound: 0.097    
+p-value upper bound: 0.150    
 **Binomial:**    
 p-value lower bound: 0.001    
 p-value upper bound: 0.011
@@ -42,15 +42,15 @@ p-value upper bound: 0.011
 
 ## Week 4
 **Normal:**   
-p-value lower bound: 0.301
-p-value upper bound: 0.023
+p-value lower bound: 0.301    
+p-value upper bound: 0.023    
 **Binomial:**   
 p-value lower bound: 0.263    
 p-value upper bound: 0.0006
 
 ## Week 5
 **Normal:**   
-p-value lower bound: 0.021
+p-value lower bound: 0.021    
 p-value upper bound: 0.277   
 **Binomial:**     
 p-value lower bound: 0.001    
@@ -60,7 +60,7 @@ p-value upper bound: 0.256
 ## Week 6
 **Normal:**   
 p-value lower bound: 0.060    
-p-value upper bound: 0.177
+p-value upper bound: 0.177    
 **Binomial:**    
 p-value lower bound: 0.001    
 p-value upper bound: 0.054
